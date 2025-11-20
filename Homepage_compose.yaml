@@ -1,0 +1,19 @@
+# BroccoliYn自用,随缘更新
+
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    environment:
+      HOMEPAGE_ALLOWED_HOSTS: 192.168.110.5:3123,home.broccoliyn.xyz # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
+      PUID: 1004 # optional, your user id
+      PGID: 1004 # optional, your group id
+    ports:
+      - 3123:3000
+    volumes:
+      - /Broccoli/homepage/config:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /sata:/volume1:ro
+      - /Broccoli/homepage/icons:/app/public/icons
+      - /Broccoli/homepage/images:/app/public/images
+    restart: unless-stopped

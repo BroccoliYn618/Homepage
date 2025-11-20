@@ -1,0 +1,30 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+# BroccoliYn自用,随缘更新
+
+- resources:
+    cpu: true
+    memory: true
+
+- resources:
+    expanded: true
+    disk:
+      - /volume1
+      - /
+
+- search:
+    provider: [google, baidu]
+    focus: true    
+    target: _blank
+
+- datetime:    
+    text_size: xl    
+    locale: zh-CN
+    format:      
+      timeStyle: long
+      dataStyle: short
+      hourCycle: h23
+
+
+

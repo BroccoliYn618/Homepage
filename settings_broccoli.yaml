@@ -1,0 +1,30 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+# BroccoliYn自用,随缘更新
+
+headerStyle: boxed
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+favicon: http://emample.com
+
+language: zh-CN
+title: Broccoli Homepage
+
+background:
+    image: https://bing.biturl.top/?resolution=1920&format=image
+    blur: sm 
+    saturate: 80
+    brightness: 80
+    opacity: 20
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+  provider: google
+  

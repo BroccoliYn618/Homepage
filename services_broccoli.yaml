@@ -1,0 +1,170 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+# BroccoliYn自用,随缘更新
+
+- 媒体存储:
+    - Emby:
+          icon: emby.png
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 个人影音中心｜电影/剧集统一管理
+          widget:
+            type: emby
+            url: http://example.com
+            key: keykeykeykey
+            enableBlocks: true # optional, defaults to false
+            enableNowPlaying: false # optional, defaults to true
+            enableUser: true # optional, defaults to false
+            enableMediaControl: false # optional, defaults to true
+            showEpisodeNumber: true # optional, defaults to false
+            expandOneStreamToTwoRows: false # optional, defaults to true
+    - MoviePilot:
+          icon: movie-pilot.png
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 自动化影视库｜刮削/整理一站式
+          showStats: true
+          widget:
+            type: customapi
+            url: urlurlurlurl
+            method: GET
+            mappings:
+                - field: movie_subscribes
+                  label: 电影订阅
+                - field: tv_subscribes
+                  label: 剧集订阅
+                - field: movie_count
+                  label: 电影数量
+                - field: tv_count
+                  label: 剧集数量
+                # - field: episode_count
+                #   label: 电影剧集数量
+                # - field: user_count
+                #   label: 用户数量
+                # - field: total_storage
+                #   label: 总空间
+                # - field: free_storage
+                #   label: 剩余空间
+                # - field: now_tasks
+    - Immich: 
+          icon: immich
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 照片图库与备份
+          widget:
+           type: immich
+           url: urlurlurlurl
+           key: keykeykeykey
+           version: 2
+    - Calibre:
+          icon: calibre
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 电子书管理与阅读中心
+          widget:
+           type: calibreweb
+           url: http://example.com
+           user: Broccoli
+           username: Broccoli
+           password: keykeykeykey
+    - Navidrome:
+          icon: navidrome
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 轻量级音乐服务器
+          widget:
+           type: navidrome
+           url: http://example.com
+           user: Broccoli
+           token: keykeykeykey
+           salt: saltsalt
+    - Alist:
+          icon: alist
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 本机存储与多云盘聚合
+
+- 系统工具:
+    - qBittorrent:
+          icon: qbittorrent.png
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: BT/PT下载任务管理
+          widget:
+            type: qbittorrent
+            url: http://example.com
+            username: "Broccoli"
+            password: "keykeykeykey" 
+            enableLeechProgress: false # optional, defaults to false
+            enableLeechSize: true # optional, defaults to false
+    - Portainer:
+          icon: portainer
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: Docker 容器集中管理面板
+          widget:
+            type: portainer
+            url: http://example.com
+            env: 2
+            key: keykeykeykey
+    - HomeAssistant:
+          icon: home-assistant
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 智能家居中枢｜自动化与设备联动
+          widget:
+           type: homeassistant
+           url: http://example.com
+           key: keykeykeykey
+    - SpeedTest:
+          icon: ookla-speedtest
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 网络速度测试
+          widget:
+           type: speedtest
+           url: http://example.com
+           version: 2 # optional, default is 1
+           key: keykeykey
+           bitratePrecision: 3 # optional, default is 0
+    - AdguardHome: 
+          icon: adguard-home
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 全局 DNS 广告过滤
+          widget:
+           type: adguard
+           url: http://example.com
+           username: Broccoli
+           password: keykeykey
+
+- 网络服务:
+    - 日历:
+        widget:
+          type: calendar
+          firstDayInWeek: Monday
+          view: monthly
+          maxEvents: 10
+          showTime: true
+          timezone: Asia/Shanghai
+    - Nginx:
+          icon: nginx.png
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 反向代理+证书管理
+          widget:
+            type: npm
+            url: http://example.com
+            username: broccoli
+            password: keykeykey
+    - 锐捷 BE68 Ultra:
+          icon: router.png
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 家庭网络中心｜路由器管理
+    - DDNS-GO:
+          icon: http://example.com
+          href: http://example.com
+          siteMonitor: http://example.com
+          description: 动态DNS域名管理

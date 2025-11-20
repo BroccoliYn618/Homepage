@@ -1,0 +1,72 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+# BroccoliYn自用,随缘更新
+
+- 常用网站:
+    - GitHub:
+        - icon: /icons/github.ico
+          href: https://github.com/BroccoliYn618
+          description: 个人项目与Star收藏仓库
+    - V2EX:
+        - icon: /icons/v2ex.png
+          href: https://www.v2ex.com/?tab=nodes
+          description: 技术社区论坛/节点浏览
+    - 今日热榜:
+        - icon: /icons/today.ico
+          href: https://tophub.today/
+          description: 全网热点聚合榜单
+    - BTC/USDT:
+        - icon: bitcoin
+          href: https://www.binance.com/zh-CN/futures/BTCUSDT
+          description: 比特币永续合约
+    - Twitter:
+        - icon: twitter
+          href: https://x.com/home
+          description: 全球资讯与加密动态
+    - Mteam:
+        - icon: /icons/mt.png
+          href: https://kp.m-team.cc/browse
+          description: M-Team | 私有影视PT站
+    - Audiences:
+        - icon: /icons/au.ico
+          href: https://audiences.me/torrents.php
+          description: Audiences | 高清影视PT站
+    - BT之家:
+        - icon: synology-download-station
+          href: https://www.1lou.pro/forum-3.htm
+          description: BTbbt|综合BT资源站
+- ipv4备用:
+    - Emby:
+        - icon: emby
+          href: http://emample.com
+          description: 个人影音媒体服务器
+    - Audiences:
+        - icon: movie-pilot
+          href: http://emample.com
+          description: 自动化影视管理平台
+    - Immich:
+        - icon: immich
+          href: http://emample.com
+          description: 照片图库与备份
+    - Calibre:
+        - icon: calibre
+          href: http://emample.com
+          description: 电子书管理与阅读中心
+    - Navidrome:
+        - icon: navidrome
+          href: http://emample.com
+          description: 轻量级音乐服务器
+    - Alist:
+        - icon: alist
+          href: http://emample.com
+          description: 本机存储与多云盘聚合
+    - HomeAssistant:
+        - icon: home-assistant
+          href: http://emample.com
+          description: 智能家居中枢
+    - qBittorrent:
+        - icon: qbittorrent
+          href: http://emample.com
+          description: BT/PT下载客户端
+
