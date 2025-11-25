@@ -22,8 +22,8 @@
     text_size: xl    
     locale: zh-CN
     format:      
-      timeStyle: long
-      dataStyle: short
+      timeStyle: short
+      dateStyle: short
       hourCycle: h23
 
 
